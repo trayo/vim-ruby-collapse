@@ -12,8 +12,6 @@ endfunc
 " regex to match the whole if-else
 " if.\+\n.\+\nelse\n.\+\nend
 
-
-
 " change Ternary into if-else
 command IFE :call IFE()
 command IfElse :call IFE()
@@ -28,8 +26,6 @@ func! IFE()
 endfunc
 
 
-
-
 " change do-end into curly braces
 command C :call Curlify()
 command Curlify :call Curlify()
@@ -39,8 +35,6 @@ function! Curlify()
   :s/ end/ } /g
   exe "normal! `q"
 endfunction
-
-
 
 
 " change curly braces into do-end
