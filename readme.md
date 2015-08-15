@@ -1,4 +1,4 @@
-Vim Ruby Collapse
+# Vim Ruby Collapse
 
 Use pathogen and install it with:
 ```
