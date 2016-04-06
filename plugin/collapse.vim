@@ -1,6 +1,6 @@
 " change if-else into Ternary
-command TER :call Ternary()
-command Ternary :call Ternary()
+command! TER :call Ternary()
+command! Ternary :call Ternary()
 func! Ternary()
   exe "normal! mq"
   exe "normal! _dwJa? \<esc>"
@@ -13,8 +13,8 @@ endfunc
 " if.\+\n.\+\nelse\n.\+\nend
 
 " change Ternary into if-else
-command IFE :call IFE()
-command IfElse :call IFE()
+command! IFE :call IFE()
+command! IfElse :call IFE()
 func! IFE()
   exe "normal! mq"
   exe "normal! Iif \<esc>"
@@ -27,8 +27,8 @@ endfunc
 
 
 " change do-end into curly braces
-command C :call Curlify()
-command Curlify :call Curlify()
+command! C :call Curlify()
+command! Curlify :call Curlify()
 function! Curlify()
   exe "normal! mqV/end\<return>J"
   :s/ do / { /g
@@ -38,8 +38,8 @@ endfunction
 
 
 " change curly braces into do-end
-command B :call Blockify()
-command Blockify :call Blockify()
+command! B :call Blockify()
+command! Blockify :call Blockify()
 function! Blockify()
   exe "normal! mq"
   :s/ { / do /g
