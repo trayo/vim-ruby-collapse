@@ -1,8 +1,17 @@
 # Vim Ruby Collapse
 
-Use pathogen and install it with:
+## Installation
+
+### Pathogen
+
+Run this command:
 ```
-cd ~/.vim/bundle
-git clone https://github.com/trayo/vim-ruby-collapse.git
+git clone https://github.com/trayo/vim-ruby-collapse.git ~/.vim/bundle/vim-ruby-collapse
 ```
 
+### Vundle
+
+Add this line to your `.vimrc`:
+```
+Plugin "trayo/vim-ruby-collapse"
+```
